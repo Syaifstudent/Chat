@@ -1,1 +1,51 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Private Chat</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+<div class="app">
+
+  <!-- INFO USER -->
+  <div class="card">
+    <h3>Akun Kamu</h3>
+    <p>Kode Unik:</p>
+    <div id="myCode" class="code">----</div>
+  </div>
+
+  <!-- CARI TEMAN -->
+  <div class="card search">
+    <input type="text" id="friendCode" placeholder="Masukkan kode teman">
+    <button id="startChat">Mulai</button>
+  </div>
+
+  <!-- CHAT -->
+  <div id="chatContainer" class="chat hidden">
+
+    <div class="chat-header">
+      <span id="chatWith">Chat</span>
+    </div>
+
+    <div id="chatBox" class="chat-box">
+      <!-- pesan -->
+    </div>
+
+    <div class="input-area">
+      <input type="text" id="messageInput" placeholder="Ketik pesan...">
+      <input type="file" id="fileInput" hidden>
+      <button id="fileBtn">📎</button>
+      <button id="voiceBtn">🎤</button>
+      <button id="sendBtn">➤</button>
+    </div>
+
+  </div>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+                              </html>
